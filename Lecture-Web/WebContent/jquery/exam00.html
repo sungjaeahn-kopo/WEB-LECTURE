@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	img {
+		width : 150px;
+		height : 150px;
+		float : center;
+	}
+	
+	#btn01 {
+		height : 150px;
+	}
+	
+	#btn02 {
+		height : 150px;
+	}
+
+</style>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('#btn01').click(function() {
+			// 마지막 얘를 img의 앞으로
+			$('img').last().prependTo('#img01')
+		})
+		
+		$('#btn02').click(function() {
+			// 처음 얘가 img의 뒤로
+			$('img').first().appendTo('#img01')
+		})
+		
+		setInterval(function() {
+			$('#btn02').trigger('click')
+		}, 3000) 
+		
+	})
+</script>
+</head>
+<body>
+	<button id="btn01">prev</button>
+	<span id='img01'>
+		<img src="../css/images/cat.png">
+		<img src="../css/images/egg.gif">
+		<img src="../css/images/meat.jpg">
+		<img src="../css/images/sun.jpg">
+	</span>
+	<button id="btn02">next</button>
+</body>
+</html>

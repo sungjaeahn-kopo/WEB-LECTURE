@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	img {
+		width : 200px;
+		height : 200px;
+	}
+</style>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+	$(document).ready(function() { 
+		$('button').click(function() {
+			// $('img'.eq(0)과 동일, 이미지 맨 처음 얘를 떼어내서 자식노드로 (body에) 붙이고 싶어
+			// $('img').first().appendTo('body')
+			
+			// 마지막 얘를 떼오고 싶어
+			$('img').last().prependTo('body')
+			
+			
+		})
+	})
+	
+	
+
+</script>
+</head>
+<body>
+	<img src="../css/images/egg.gif">
+	<img src="../css/images/meat.jpg">
+	<img src="../css/images/sun.jpg">
+	<img src="../css/images/cat.png">
+	<br><br>
+	<button>클릭</button>
+</body>
+</html>

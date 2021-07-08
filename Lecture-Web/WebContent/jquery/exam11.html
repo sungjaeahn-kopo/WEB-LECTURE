@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+	
+	let starFunc = function() {
+		$('h1')[0].innerText += '*'
+	}
+
+	$(document).ready(function() {
+		
+		$('h1').click(function(e, data='*') {
+			$('h1').text(function(index, text) {
+				if(data == '*' && index == 0)
+					return text + data
+				else if(data == '#'&& index == 1)
+					return text + data
+			
+				
+			})
+		})
+		
+		/*
+		$('h1').click(function(e, data='*') {
+			
+	//		data = data || '*'
+			
+//			$(this)[0].innerText += '*'
+			$(this)[0].innerText += data
+		})
+		*/
+			
+		
+		let pid = setInterval(function() {
+		//	starFunc()
+		//	$('h1').click()
+			$('h1').trigger('click', '#')
+		//	$('h1').trigger('click')
+		}, 1000)
+		
+		setTimeout(function() {
+			clearInterval(pid)
+		}, 2000)
+		
+	})
+</script>
+</head>
+<body>
+	<h1>start : </h1>
+	<h1>start : </h1>
+	
+</body>
+</html>
+
+
+
+
+
+
+

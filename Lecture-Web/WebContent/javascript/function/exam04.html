@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	function returnFunction() {
+		return function() {
+			alert('return function...')
+		}
+	}
+
+	//let ret = returnFunction()
+	//ret()
+	returnFunction()()
+	
+	// 지역변수 output을 유지하고 싶음!!! => closure
+	//return function()내용이 끝날때까지 함수의 값을 유지시켜줌
+	function test(name) {
+		var output = 'Hello' + name + '!!!'
+		return function() {
+			alert(output)
+		}
+	}
+	
+	test('홍길동')()
+	//test('홍길동')
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

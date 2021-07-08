@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload = function() {
+		let h1Tag = document.createElement('h1')
+		let text = document.createTextNode('hello')
+		h1Tag.appendChild(text)
+		//console.log(h1Tag)
+		document.body.appendChild(h1Tag)
+		
+		let imgTag = document.createElement('img')
+		imgTag.setAttribute('src', 'https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png')
+		//console.log(imgTag)
+		document.body.appendChild(imgTag)
+		
+		let aTag = document.createElement('a')
+		aTag.setAttribute('href', 'http://www.daum.net')
+		aTag.target = '_blank'
+		aTag.appendChild(imgTag)
+		document.body.appendChild(aTag)
+		
+	}
+
+</script>
+</head>
+<body>
+	<!-- 	<h1>Hello</h1>
+	<a href="http://www.daum.net" target="_blank">
+	<img src = "https://t1.daumcdn.net/daumtop_chanel/op/20200723055344399.png">
+	 -->
+	
+</body>
+</html>

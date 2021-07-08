@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: 160px 160px 160px 160px;
+	}
+
+	.grid-container > div {
+		background-color: pink;
+		border : 1px solid black;
+	}
+
+	 .grid > .grid-items1 {
+		grid-column: 1/4;
+		background-color: fuchsia;
+	}
+	
+	.grid > .grid-items2 {
+		grid-row: 2/4;
+		background-color: aqua;
+	}
+	
+	.grid > .grid-items3 {
+		grid-row: 3/4;
+		background-color: yellow;
+	}
+	
+	.grid > .grid-items4 {
+		grid-area: 2/3/4/3;
+		background-color: red;
+	}
+
+	.grid > .grid-items6 {
+		grid-column: 1/4;
+		background-color: green;
+	}
+</style>
+<body>
+	<div class="grid-container grid">
+		<div class="grid-items1">1</div>
+		<div class="grid-items2">2</div>
+		<div class="grid-items3">3</div>
+		<div class="grid-items4">4</div>
+		<div class="grid-items5">5</div>
+		<div class="grid-items6">6</div>
+	</div> 
+</body>
+</html>

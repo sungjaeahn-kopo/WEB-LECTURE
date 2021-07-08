@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	img {
+		width : 150px;
+		height : 150px;
+	}
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.slider').bxSlider({
+			captions : true,
+			slideWidth : 150,
+			 auto: true,
+			  autoControls: true,
+			  stopAutoOnClick: true,
+			  pager: true,
+			  mode : 'vertical'
+				
+		})
+	})
+</script>
+</head>
+<body>
+	<div class="slider">
+    	<div><img src="../../css/images/cat.png" title="고양이">  </div>
+		<div><img src="../../css/images/egg.gif" title="겨란">  </div>
+		<div><img src="../../css/images/meat.jpg" title="고기"> </div>
+		<div><img src="../../css/images/sun.jpg" title="태양">	</div>
+  	</div>
+</body>
+</html>

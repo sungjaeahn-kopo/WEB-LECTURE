@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let array = [1, 2, 3, 4, 5]
+	
+	// shallow copy
+	let array2 = array
+	for(let i in array)
+		document.write("array2 : " + array2[i] + '<br>')
+	 
+	// deep copy
+	var index = 0
+	let array3=[]
+	for(let name of array) {
+		array3.push(name)
+		document.write("array3 : " + array3[index++] +'<br>')
+	}
+		document.write("array3 : " + array3 + '<br>')
+		array3[2] = 100
+		document.write("array3 : " + array3)
+	
+	console.log(array)
+	console.log(array2)
+	console.log(array3)
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

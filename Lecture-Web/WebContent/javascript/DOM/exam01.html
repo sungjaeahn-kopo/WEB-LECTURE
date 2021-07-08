@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	window.onload = function() {
+		alert('innerText : ' + document.body.innerText)
+		alert('innerHTML : ' + document.body.innerHTML)
+		
+		let list = ''
+		list += '<ul>'
+		list += '<li>aaa</li>'
+		list += '<li>bbb</li>'
+		list += '<li>ccc</li>'
+		list += '</ul>'
+		
+		//document.body.innerText = list
+		document.body.innerHTML = list
+	}
+
+</script>
+</head>
+<body>
+	<h2>안녕하세요</h2>
+	<h2>Hello</h2>
+
+</body>
+</html>

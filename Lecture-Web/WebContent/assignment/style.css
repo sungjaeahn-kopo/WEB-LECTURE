@@ -1,0 +1,8 @@
+@font-face {
+	src : url("font/Catalina_Avalon_Sans_Bold.ttf");
+	font-family : "caltalina";
+}
+	
+	layer {
+		font-family: "caltalina",serif;		
+	}

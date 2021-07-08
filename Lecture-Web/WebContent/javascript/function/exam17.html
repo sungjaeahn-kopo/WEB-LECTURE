@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let books = ['백설공주', '콩쥐팥쥐', '피터팬', '신데렐라']
+	
+	for(let index = 0; index < books.length; index++) {
+		document.write(books[index] + "&nbsp;&nbsp;&nbsp;")
+	}
+		document.write('<br>')
+	
+	for(let i in books) {
+		document.write(books[i] + "&nbsp;&nbsp;&nbsp;")
+	}	
+		document.write('<br>')
+		
+	for(let book of books) {
+		document.write(book + "&nbsp;&nbsp;&nbsp;")
+	}		
+		document.write('<br>')
+	
+		// books 배열이 가지고 있는 요소를 뽑아서 callback
+		// 1일때 루프 돌고~ 2일때 루프 돌고~
+		
+	books.forEach(function(element, index, array) {
+		document.write(element + "&nbsp;&nbsp;&nbsp;")	
+	})
+	document.write('<br>')
+	
+	books.sort()
+		
+	books.forEach(function(element, index, array) {
+		document.write(element + "&nbsp;&nbsp;&nbsp;")	
+	})
+	document.write('<br>')
+
+	let nums = [12, 6, 25, 63, 4, 32, 18, 4, 55, 35]
+	document.write('nums : ' + nums + '<br>')
+	nums.sort()
+	document.write('sort()... nums : ' + nums + '<br>')
+	
+	nums.sort(function(left, right) {
+		return left-right
+	})
+	document.write('오름차순 정렬 : ' + nums + '<br>')
+
+	nums.sort(function(left, right) {
+		return right-left
+	})
+	document.write('내림차순 정렬 : ' + nums + '<br>')
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

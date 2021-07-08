@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#numberlist li {
+		float: left;
+		margin: 20px;
+		font-size:16pt;
+		list-style-type: none;
+	}
+	
+	/* li 자식들 중 맨 처음 자식 */
+	li:first-child {
+		color: green
+	}
+	
+	li:last-child {
+		color: blue	
+	}
+	
+	li:nth-child(3n) {
+		color: orange
+	}
+	
+	p {
+		clear:both
+	}
+	
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:visited {
+		color: black;
+	}
+	
+	/* 마우스를 가져다 놓는 것 */
+	a:hover {
+		background-color: yellow;
+		text-decoration: underline;
+	}
+	
+	/* 클릭시 */
+	a:active {
+		color : pink;	
+		font-weight: bold;
+	} 
+	
+	p.text::first-letter {
+		font-size:4em
+	}
+	
+	p.text::selection {
+		background-color: yellow;
+	}
+	
+	p.text::first-letter {
+		text-decoration: underline;	
+	}
+	
+	/* h1이라는 타입이 맨 처음에 나왔으면~ */
+	h1:first-of-type {
+		color: red
+	}
+	
+	h2:last-of-type {
+		color: lime
+	}
+	
+	/* h3 타입이 혼자라면 */
+	h3:only-of-type {
+		background-color: pink
+	}
+	
+	/* 하나만 있는 자식이 h2여야 해당 */
+	h2:only-child {
+		background-color: lightgray;
+	}
+</style>
+</head>
+<body>
+	<ul id="numberlist">
+		<li>ONE</li>
+		<li>TWO</li>
+		<li>THREE</li>
+		<li>FOUR</li>
+		<li>FIVE</li>
+		<li>SIX</li>
+		<li>SEVEN</li>
+		<li>EIGHT</li>
+		<li>NINE</li>
+		<li>TEN</li>
+	</ul>
+	<p>
+		<a href="http://www.naver.com">NAVER</a>
+		<a href="http://www.daum.net">DAUM</a>
+	</p>
+	<p class="text">
+		QEWR<br>
+		ADSF<br>
+		ZCXV
+	</p>
+	<p class="text">
+		qwer<br>
+		asdf<br>
+		zxcv
+	</p>
+		<h1>Header1</h1>
+		<h3>Header3</h3>
+		<h2>Header2</h2>
+		<h4>Header4</h4>
+		<h1>Header1</h1>
+		<h2>Header2</h2>
+		<h6>Header6</h6>
+	<div>
+		<h2>Sub2</h2>
+		<h1>Sub1</h1>
+	</div>
+</body>
+</html>

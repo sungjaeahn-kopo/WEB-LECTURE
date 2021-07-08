@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	let a = 10
+	let b = 20
+	const data = 'hello'
+	alert(`a : ${ a }, b : ${ b }`)
+	alert(`data : ${ data }`)
+	
+	// data = '안녕하세요' // 오류발생!
+	alert(`data : ${ data }`)
+	
+	{
+		let a = 30
+		let c = 50
+		alert(`a : ${ a }, b : ${ b }, c : ${ c }`)
+		/* let 사용하면 브레이스 내에서만 적용 */
+	}
+		alert(`a : ${ a }, b : ${ b }, c : ${ c }`)	// 오류발생!
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
